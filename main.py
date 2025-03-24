@@ -9,6 +9,10 @@ def run_etl(series_id, table_name):
     upsert_data(transformed_df, table_name)
 
 if __name__ == "__main__":
-    series_id = "GDP"  # Example metric
-    table_name = "economic_data"
+    series_id = "GDP"
+    table_name = "gdp"
+    run_etl(series_id, table_name)
+
+    series_id = "UNRATE"
+    table_name = "unemployment_rate"
     run_etl(series_id, table_name)
