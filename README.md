@@ -12,9 +12,8 @@ This repository contains a Python-based ETL pipeline for fetching economic data 
 ```plain text
 fred/ 
 │── sql/
-|   │── gdp.sql
-|   │── unemployment_rate.sql
-|   │── fredflow_logs.sql
+|   │── create_tables.sql
+|   │── create_fredflow_logs.sql
 │── extract.py
 │── transform.py
 │── load.py
