@@ -64,9 +64,14 @@ DB_CONFIG = {
 }
 
 # List of FRED series to be fetched
+# Dictionary mapping FRED series to database table names
 FRED_SERIES_MAPPING = {
-    "GDP": "gdp",
-    "UNRATE": "unemployment_rate" #etc
+    "GDP": "GDP",   # Gross Domestic Product
+    "UNRATE": "UNRATE", # Unemployment Rate
+    "DFF": "DFF",  # Effective Federal Funds Rate,
+    "CPIENGSL": "CPIENGSL",  # Energy in US City Average
+    "GFDEBTN": "GFDEBTN",  # Total Public Debt	
+    "CORESTICKM159SFRBATL": "CORESTICKM159SFRBATL"  # Sticky CPI
 }
 ```
 
